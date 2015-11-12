@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package julius.examen.parcial.juliocesarhernandez;
+package examenparcial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -25,7 +25,7 @@ public class Base {
     }
     @RequestMapping(value="/reservacion",method=RequestMethod.GET)
     @ResponseBody String guardar()throws Exception{
-        return " Reservacion guardada con exito";
+        return " Reservacion guardada";
     }
     public static void main(String[] args)throws Exception{
         SpringApplication.run(Base.class, args);

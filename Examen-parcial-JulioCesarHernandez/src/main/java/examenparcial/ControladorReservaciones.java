@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package julius.examen.parcial.juliocesarhernandez;
+package examenparcial;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,24 +18,24 @@ public class ControladorReservaciones {
          DAOCliente cl=new DAOCliente();
          DAOTarjeta ta=new DAOTarjeta();
          Cliente c1=new Cliente();
-         c1.setEmail("julio@outlook.com");
-         c1.setNombre("julio");
-         c1.setPaterno("hernandez");  
+         c1.setEmail("alfredo@hotmail.com");
+         c1.setNombre("alfredo");
+         c1.setPaterno("serrano");  
          cl.guardar(c1);
          
          Tarjeta ta1=new Tarjeta();
          ta1.setIdCliente(c1);
-         ta1.setNombreTarjeta("banamex");
-         ta1.setNumeroTarjeta(12345);
+         ta1.setNombreTarjeta("bancomer");
+         ta1.setNumeroTarjeta(11122);
          ta1.setSaldo(25000f);
          ta.guardar(ta1);
          
          Reservacion reservacion=new Reservacion();
          reservacion.setIdCliente(c1);
          reservacion.setIdTarjeta(ta1);
-         reservacion.setCiudadDestino("España");
+         reservacion.setCiudadDestino("Mexico");
           re.guardar(reservacion);
-         return "Reservacion guardada con exito";   
+         return "Reservacion guardada";   
     
      
      

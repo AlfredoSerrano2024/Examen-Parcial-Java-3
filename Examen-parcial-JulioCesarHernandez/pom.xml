@@ -70,4 +70,5 @@
       <url>file:${project.basedir}/lib</url>
     </repository>
   </repositories>
+    <name>Examen-parcial-AlfredoSerrano</name>
 </project>

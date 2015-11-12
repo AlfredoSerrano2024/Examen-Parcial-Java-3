@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package julius.examen.parcial.juliocesarhernandez;
+package examenparcial;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
@@ -19,7 +19,7 @@ import javax.validation.constraints.Size;
 
 /**
  *
- * @author Miguel
+ * @author Alfredo
  */
 @Entity
 @Table(name = "reservacion")
@@ -107,7 +107,7 @@ public class Reservacion implements Serializable {
 
     @Override
     public String toString() {
-        return "julius.examen.parcial.juliocesarhernandez.Reservacion[ idReservacion=" + idReservacion + " ]";
+        return "alfredo.examen.parcial.alfredoserrano.Reservacion[ idReservacion=" + idReservacion + " ]";
     }
     
 }
